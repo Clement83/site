@@ -3,7 +3,7 @@ backend:
   repo: clement83/site
   branch: main
   auth_type: implicit
-  base_url: https://github.com/login/oauth/authorize
+  base_url: https://github.com/login/oauth/authorize/
   client_id: Ov23li2q5RFwDfbcHB5t
 
 media_folder: "static/images"
