@@ -88,4 +88,6 @@ title: "Freelance – Gestion d'entreprise"
         }
       });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  })();
+</script>
