@@ -47,29 +47,7 @@ title: "Freelance – Gestion d'entreprise"
 <section id="contact" class="contact reveal">
   <div class="container">
     <h2>Contact</h2>
-    <p>Un projet, une question ? Écrivez-moi :</p>
-
-    <!-- Formulaire mailto : ouvre le client mail de l'utilisateur -->
-    <form class="contact-form" action="mailto:prenom.nom@exemple.com?subject=Contact%20depuis%20le%20site" method="post" enctype="text/plain">
-      <div class="row">
-        <label for="name">Votre nom</label>
-        <input id="name" name="Nom" type="text" required />
-      </div>
-      <div class="row">
-        <label for="email">Votre e-mail</label>
-        <input id="email" name="Email" type="email" required />
-      </div>
-      <div class="row">
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" rows="5" required></textarea>
-      </div>
-      <button class="btn btn-primary" type="submit">Envoyer</button>
-      <p class="hint">💡 Le bouton ouvre votre logiciel de messagerie (pas d’envoi côté serveur).</p>
-    </form>
-
-    <div class="alt-contact">
-      <p>Ou écrivez-moi directement : <a href="mailto:prenom.nom@exemple.com">prenom.nom@exemple.com</a></p>
-    </div>
+    <a href="mailto:prenom.nom@exemple.com"><p>Un projet, une question ? Écrivez-moi :</p></a>
   </div>
 </section>
 
