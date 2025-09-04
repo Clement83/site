@@ -1,0 +1,4 @@
+baseURL = "https://votrenom.github.io"
+languageCode = "fr-fr"
+title = "Mon Site Vitrine"
+theme = "ananke"
