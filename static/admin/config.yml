@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: votrenom/votresite
+  repo: clement83/site
   branch: main
 
 media_folder: "static/images"
