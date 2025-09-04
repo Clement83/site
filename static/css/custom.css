@@ -1,10 +1,8 @@
 :root {
     --green-1: #e9f7ef;
-    /* pastel très clair */
     --green-2: #c9f0db;
     --green-3: #9fe6c9;
     --green-4: #63d3aa;
-    /* accent */
     --ink: #1f2937;
     --muted: #6b7280;
     --white: #ffffff;
@@ -29,7 +27,7 @@ body {
     padding: clamp(24px, 5vw, 40px) 0;
 }
 
-/* Hero with soft gradient */
+/* Hero */
 .hero {
     background: linear-gradient(135deg, var(--green-1), var(--green-2));
     border-bottom: 1px solid #e5e7eb;
@@ -91,23 +89,11 @@ body {
     margin: 0 0 18px;
 }
 
-/* Cards grid */
+/* Grid cards */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: clamp(16px, 2.5vw, 28px);
-}
-
-@media (max-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 640px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .card {
@@ -237,5 +223,52 @@ body {
 
     to {
         transform: translateY(0) scale(1);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: clamp(26px, 6vw, 40px);
+    }
+
+    .hero .subtitle {
+        font-size: clamp(15px, 3vw, 18px);
+    }
+}
+
+@media (max-width:640px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero .subtitle {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .contact-form {
+        padding: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 }
