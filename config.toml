@@ -7,5 +7,7 @@ theme = "ananke"
   customCSS = ["css/custom.css"]  # charge notre CSS
 
 # Autorise le HTML dans le markdown (pour le formulaire + script)
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
