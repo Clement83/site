@@ -1,4 +1,11 @@
-baseURL = "https://votrenom.github.io"
-languageCode = "fr-fr"
-title = "Mon Site Vitrine"
+baseURL = "https://clement83.github.io/site/"
+languageCode = "fr"
+title = "Freelance – Gestion d'entreprise"
 theme = "ananke"
+
+[params]
+  customCSS = ["css/custom.css"]  # charge notre CSS
+
+# Autorise le HTML dans le markdown (pour le formulaire + script)
+[markup.goldmark.renderer]
+  unsafe = true
