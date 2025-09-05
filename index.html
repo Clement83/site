@@ -47,15 +47,25 @@
       opacity: 0.9;
     }
 
-    nav {
+    .nav-container {
       background: var(--blanc);
-      padding: 1rem;
       position: sticky;
       top: 0;
       z-index: 10;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .nav-links {
+      display: flex;
       gap: 2rem;
     }
 
@@ -72,6 +82,60 @@
     nav a:hover {
       background: var(--vert-fonce);
       color: var(--blanc);
+    }
+    
+    .nav-logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--vert-fonce);
+        text-decoration: none;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .hamburger .line {
+      width: 25px;
+      height: 3px;
+      background-color: var(--vert-fonce);
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--blanc);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+      
+      .hamburger.open .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .hamburger.open .line:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
     }
 
     main {
@@ -191,12 +255,22 @@
     <p>Secrétaire indépendante – Ancienne comptable</p>
   </header>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#services">Services</a>
-    <a href="#why">Pourquoi moi</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <nav>
+        <a href="#" class="nav-logo">Debora</a>
+        <div class="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#why">Pourquoi moi</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+  </div>
 
   <main>
     <section id="about">
@@ -239,5 +313,15 @@
     </div>
     <p style="margin-top: 3rem; opacity: 0.7;">© 2025 Debora – Tous droits réservés</p>
   </footer>
+  
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
