@@ -26,6 +26,10 @@
       line-height: 1.8;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     header {
       background: linear-gradient(135deg, var(--vert-moyen), var(--vert-fonce));
       color: var(--blanc);
@@ -154,6 +158,12 @@
       grid-template-columns: 1fr;
       gap: 2rem;
       align-items: center;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    section.hidden {
+      opacity: 0;
+      transform: translateY(20px);
     }
 
     @media (min-width: 768px) {
@@ -273,7 +283,7 @@
   </div>
 
   <main>
-    <section id="about">
+    <section id="about" class="hidden">
       <div class="section-content">
         <h2>À propos de moi</h2>
         <p>Je m’appelle Debora, j’ai 41 ans et j’ai travaillé plus de 15 ans dans un cabinet comptable à Lyon. Rigoureuse, organisée et à l’écoute, j’accompagne désormais entrepreneurs, artisans et professions libérales dans la gestion de leurs tâches administratives.</p>
@@ -281,7 +291,7 @@
       <img src="https://placehold.co/600x400/a9c7a9/333333?text=Debora" alt="Photo de présentation" class="placeholder-img">
     </section>
 
-    <section id="services">
+    <section id="services" class="hidden">
       <img src="https://placehold.co/600x400/f0f7e8/333333?text=Services" alt="Illustration services" class="placeholder-img">
       <div class="section-content">
         <h2>Services proposés</h2>
@@ -295,7 +305,7 @@
       </div>
     </section>
 
-    <section id="why">
+    <section id="why" class="hidden">
       <div class="section-content">
         <h2>Pourquoi travailler avec moi ?</h2>
         <p>Grâce à mon expérience en comptabilité, je comprends les enjeux financiers et administratifs des entreprises. Je propose un accompagnement fiable, discret et personnalisé pour vous libérer du temps et vous aider à vous concentrer sur votre cœur de métier.</p>
@@ -322,6 +332,19 @@
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('hidden');
+            } else {
+                entry.target.classList.add('hidden');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('section.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
