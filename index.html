@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secrétariat Freelance - Debora</title>
+  <style>
+    :root {
+      --vert-clair: #e7f5dc;
+      --vert-moyen: #b3d7bd;
+      --vert-doux: #c4dcc6;
+      --texte: #2f3d2f;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--vert-clair);
+      color: var(--texte);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--vert-moyen);
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeUp 1.4s ease-in-out;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #234;
+    }
+
+    footer {
+      background: var(--vert-doux);
+      padding: 1.5rem;
+      text-align: center;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      background: var(--vert-moyen);
+      color: var(--texte);
+      text-decoration: none;
+      border-radius: 1rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    footer a:hover {
+      background: var(--vert-clair);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      header h1 { font-size: 2.4rem; }
+      header p { font-size: 1.2rem; }
+      main { padding: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Debora</h1>
+    <p>Ancienne comptable – Secrétaire indépendante</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>À propos de moi</h2>
+      <p>Je m’appelle Debora, j’ai 41 ans et j’ai travaillé pendant plus de 15 ans dans un cabinet comptable à Lyon. Passionnée par l’organisation et l’accompagnement administratif, j’ai décidé de mettre mes compétences au service des entrepreneurs, artisans et professions libérales en tant que secrétaire freelance.</p>
+    </section>
+
+    <section>
+      <h2>Services proposés</h2>
+      <ul>
+        <li>Gestion d’agenda et prise de rendez-vous</li>
+        <li>Classement et archivage numérique</li>
+        <li>Préparation de documents administratifs</li>
+        <li>Saisie de données et suivi de facturation</li>
+        <li>Relance clients et fournisseurs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pourquoi travailler avec moi ?</h2>
+      <p>Avec mon expérience en comptabilité, je comprends les enjeux financiers et administratifs de votre activité. Je propose un service fiable, discret et adapté à vos besoins pour vous libérer du temps et vous permettre de vous concentrer sur votre cœur de métier.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contactez-moi facilement :</p>
+    <a href="tel:+33612345678">📞 Appeler</a>
+    <a href="mailto:debora@example.com">✉️ Envoyer un email</a>
+  </footer>
+</body>
+</html>
+
