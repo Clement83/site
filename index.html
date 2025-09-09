@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secrétariat Freelance - Deborah</title>
+  <title>2D Services TPE – Assistance administrative & comptable | Déborah Darmanin</title>
+  <meta name="description"
+    content="2D Services TPE accompagne TPE, PME et professions libérales dans la gestion administrative et comptable. Services flexibles, rigoureux et confidentiels à Hyères, TPM et à distance partout en France.">
+  <meta name="author" content="Déborah Darmanin">
+  <link rel="canonical" href="https://www.2dservices-tpe.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="2D Services TPE – Assistance administrative & comptable">
+  <meta property="og:description"
+    content="Solutions administratives et comptables sur mesure pour TPE, PME et professions libérales. Hyères, TPM & à distance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.2dservices-tpe.fr/">
+  <meta property="og:image" content="https://placehold.co/1200x630/a9c7a9/333333?text=2D+Services+TPE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2D Services TPE – Assistance administrative & comptable">
+  <meta name="twitter:description"
+    content="Accompagnement rigoureux, flexible et confidentiel pour les dirigeants de TPE & PME.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/a9c7a9/333333?text=2D+Services+TPE">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "2D Services TPE",
+    "image": "https://placehold.co/600x400/a9c7a9/333333?text=Déborah+Darmanin",
+    "url": "https://www.2dservices-tpe.fr/",
+    "telephone": "+33612345678",
+    "email": "deborah@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyères",
+      "addressRegion": "Provence-Alpes-Côte d’Azur",
+      "addressCountry": "FR"
+    },
+    "description": "2D Services TPE propose des solutions administratives et comptables pour TPE, PME et professions libérales. Interventions sur site (Hyères & TPM) ou à distance en France.",
+    "founder": {
+      "@type": "Person",
+      "name": "Déborah Darmanin"
+    },
+    "areaServed": "France"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
   <style>
     :root {
       --vert-clair: #f0f7e8;
@@ -15,7 +63,7 @@
       --texte: #333;
       --blanc: #fff;
       --gris-clair: #f9f9f9;
-      --shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     body {
@@ -27,7 +75,7 @@
     }
 
     html {
-        scroll-behavior: smooth;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -56,7 +104,7 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav {
@@ -87,13 +135,13 @@
       background: var(--vert-fonce);
       color: var(--blanc);
     }
-    
+
     .nav-logo {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 1.5rem;
-        color: var(--vert-fonce);
-        text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--vert-fonce);
+      text-decoration: none;
     }
 
     .hamburger {
@@ -120,7 +168,7 @@
         flex-direction: column;
         align-items: center;
         padding: 2rem 0;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
 
       .nav-links.open {
@@ -130,13 +178,15 @@
       .hamburger {
         display: block;
       }
-      
+
       .hamburger.open .line:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
       }
+
       .hamburger.open .line:nth-child(2) {
         opacity: 0;
       }
+
       .hamburger.open .line:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
       }
@@ -170,6 +220,7 @@
       section {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
+
       section:nth-child(odd) .section-content {
         order: 1;
       }
@@ -246,105 +297,118 @@
       background: var(--vert-fonce);
       transform: translateY(-3px);
     }
-    
+
     .contact-links a.email {
-        background: transparent;
-        border-color: var(--vert-moyen);
-    }
-    
-    .contact-links a.email:hover {
-        background: var(--vert-moyen);
-        color: var(--blanc);
+      background: transparent;
+      border-color: var(--vert-moyen);
     }
 
+    .contact-links a.email:hover {
+      background: var(--vert-moyen);
+      color: var(--blanc);
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Deborah</h1>
-    <p>Secrétaire indépendante – Ancienne comptable</p>
+    <h1>2D Services TPE – Assistance administrative & comptable</h1>
+    <p>Votre allié administratif et comptable – Déborah Darmanin</p>
   </header>
 
   <div class="nav-container">
-    <nav>
-        <a href="#" class="nav-logo">Deborah</a>
-        <div class="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#services">Services</a>
-            <a href="#why">Pourquoi moi</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+    <nav aria-label="Navigation principale">
+      <a href="#" class="nav-logo">2D Services TPE</a>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" aria-label="Menu mobile">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
   </div>
 
   <main>
-    <section id="about" class="hidden">
+    <section id="about" class="hidden" aria-labelledby="about-title">
       <div class="section-content">
-        <h2>À propos de moi</h2>
-        <p>Je m’appelle Deborah, j’ai 41 ans et j’ai travaillé plus de 15 ans dans un cabinet comptable à Lyon. Rigoureuse, organisée et à l’écoute, j’accompagne désormais entrepreneurs, artisans et professions libérales dans la gestion de leurs tâches administratives.</p>
+        <h2 id="about-title">À propos de moi</h2>
+        <p>Je m’appelle <strong>Déborah Darmanin</strong> et j’ai créé <strong>2D Services TPE</strong> pour accompagner
+          les dirigeants dans leur quotidien administratif et comptable. Avec plus de 20 ans d’expérience en entreprise
+          et en cabinet comptable, je propose des solutions simples, flexibles et efficaces pour vous libérer du temps
+          et vous permettre de vous concentrer sur votre activité.</p>
+        <p><strong>Mes valeurs :</strong> rigueur – confidentialité – adaptabilité.</p>
       </div>
-      <img src="https://placehold.co/600x400/a9c7a9/333333?text=Deborah" alt="Photo de présentation" class="placeholder-img">
+      <img src="https://placehold.co/600x400/a9c7a9/333333?text=Déborah+Darmanin"
+        alt="Portrait de Déborah Darmanin, fondatrice de 2D Services TPE" class="placeholder-img">
     </section>
 
-    <section id="services" class="hidden">
-      <img src="https://placehold.co/600x400/f0f7e8/333333?text=Services" alt="Illustration services" class="placeholder-img">
+    <section id="services" class="hidden" aria-labelledby="services-title">
+      <img src="https://placehold.co/600x400/f0f7e8/333333?text=Services"
+        alt="Illustration des services administratifs et comptables proposés" class="placeholder-img">
       <div class="section-content">
-        <h2>Services proposés</h2>
+        <h2 id="services-title">Mes services</h2>
         <ul>
-          <li>Gestion d’agenda et prise de rendez-vous</li>
-          <li>Classement et archivage numérique</li>
-          <li>Préparation de documents administratifs</li>
-          <li>Saisie de données et suivi de facturation</li>
-          <li>Relance clients et fournisseurs</li>
+          <li><strong>Préparation comptable :</strong> tri et préparation des pièces, gestion de la TVA et des
+            déclarations, suivi de trésorerie, transmission des éléments à l’expert-comptable.</li>
+          <li><strong>Assistance administrative :</strong> facturation, relances, rédaction de courriers, gestion
+            d’agenda et e-mails.</li>
+          <li><strong>Accompagnement flexible :</strong> interventions ponctuelles, forfaits mensuels adaptés, sur site
+            (Hyères & TPM) ou à distance partout en France.</li>
         </ul>
       </div>
     </section>
 
-    <section id="why" class="hidden">
+    <section id="tarifs" class="hidden" aria-labelledby="tarifs-title">
       <div class="section-content">
-        <h2>Pourquoi travailler avec moi ?</h2>
-        <p>Grâce à mon expérience en comptabilité, je comprends les enjeux financiers et administratifs des entreprises. Je propose un accompagnement fiable, discret et personnalisé pour vous libérer du temps et vous aider à vous concentrer sur votre cœur de métier.</p>
+        <h2 id="tarifs-title">Mes tarifs</h2>
+        <ul>
+          <li><strong>Pack découverte :</strong> 1 audit + 2h de prestation = 100 € HT</li>
+          <li><strong>Forfait mensuel :</strong> à partir de 280 € HT (8-10h d’accompagnement)</li>
+          <li><strong>Tarif horaire :</strong> dès 35 €/h HT</li>
+        </ul>
+        <p>Chaque mission est étudiée en fonction de vos besoins afin de vous proposer une solution sur mesure.</p>
       </div>
-      <img src="https://placehold.co/600x400/6b8e6b/ffffff?text=Confiance" alt="Illustration professionnelle" class="placeholder-img">
+      <img src="https://placehold.co/600x400/6b8e6b/ffffff?text=Tarifs"
+        alt="Tableau des tarifs proposés par 2D Services TPE" class="placeholder-img">
     </section>
   </main>
 
   <footer id="contact">
     <h2>Contactez-moi</h2>
-    <p>Discutons de la manière dont je peux vous aider.</p>
+    <p>Vous souhaitez gagner du temps et vous recentrer sur votre cœur de métier ? Contactez-moi dès aujourd’hui pour un
+      devis gratuit ou plus d’informations.</p>
     <div class="contact-links">
       <a href="tel:+33612345678">📞 Appeler</a>
       <a href="mailto:deborah@example.com" class="email">✉️ Envoyer un email</a>
     </div>
-    <p style="margin-top: 3rem; opacity: 0.7;">© 2025 Deborah – Tous droits réservés</p>
+    <p style="margin-top: 3rem; opacity: 0.7;">© 2025 2D Services TPE – Tous droits réservés</p>
   </footer>
-  
+
   <script>
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       navLinks.classList.toggle('open');
     });
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.remove('hidden');
-            } else {
-                entry.target.classList.add('hidden');
-            }
-        });
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.add('hidden');
+        }
+      });
     });
 
-    const hiddenElements = document.querySelectorAll('section.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
+    document.querySelectorAll('section.hidden').forEach((el) => observer.observe(el));
   </script>
 </body>
+
 </html>
