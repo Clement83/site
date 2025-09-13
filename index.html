@@ -16,14 +16,14 @@
     content="Solutions administratives et comptables sur mesure pour TPE, PME et professions libérales. Hyères, TPM & à distance.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.2dservices-tpe.fr/">
-  <meta property="og:image" content="https://placehold.co/1200x630/a9c7a9/333333?text=2D+Services+TPE">
+  <meta property="og:image" content="/site/images/header.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="2D Services TPE – Assistance administrative & comptable">
   <meta name="twitter:description"
     content="Accompagnement rigoureux, flexible et confidentiel pour les dirigeants de TPE & PME.">
-  <meta name="twitter:image" content="https://placehold.co/1200x630/a9c7a9/333333?text=2D+Services+TPE">
+  <meta name="twitter:image" content="/site/images/header.png">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "2D Services TPE",
-    "image": "https://placehold.co/600x400/a9c7a9/333333?text=Déborah+Darmanin",
+    "image": "/site/images/deb.jpg",
     "url": "https://www.2dservices-tpe.fr/",
     "telephone": "+33612345678",
     "email": "deborah@example.com",
@@ -97,6 +97,13 @@
       margin-top: 0.5rem;
       font-size: 1.2rem;
       opacity: 0.9;
+    }
+
+    header img {
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
     }
 
     .nav-container {
@@ -190,6 +197,19 @@
       .hamburger.open .line:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
       }
+
+      header {
+        padding: 2rem 1rem;
+      }
+
+      header img {
+        width: 100%;
+        height: auto;
+        /* Adjust as needed */
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     main {
@@ -264,7 +284,7 @@
       left: 0;
     }
 
-    .placeholder-img {
+    .content_image {
       width: 100%;
       height: auto;
       border-radius: 8px;
@@ -307,12 +327,16 @@
       background: var(--vert-moyen);
       color: var(--blanc);
     }
+
+    footer h2 {
+      display: inline-block;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="/site/images/header.png" alt="Logo de 2D Services TPE" class="placeholder-img">
+    <img src="/site/images/header.png" alt="Logo de 2D Services TPE">
   </header>
 
   <div class="nav-container">
@@ -334,7 +358,7 @@
 
   <main>
     <section id="about" class="hidden" aria-labelledby="about-title"><img src="/site/images/deb.jpg"
-        alt="Portrait de Déborah Darmanin, fondatrice de 2D Services TPE" class="placeholder-img">
+        alt="Portrait de Déborah Darmanin, fondatrice de 2D Services TPE" class="content_image">
       <div class="section-content">
         <h2 id="about-title">À propos de moi</h2>
         <p>Je m’appelle <strong>Déborah Darmanin</strong> et j’ai créé <strong>2D Services TPE</strong> pour accompagner
@@ -347,7 +371,7 @@
 
     <section id="services" class="hidden" aria-labelledby="services-title">
       <img src="/site/images/service.jpg" alt="Illustration des services administratifs et comptables proposés"
-        class="placeholder-img">
+        class="content_image">
       <div class="section-content">
         <h2 id="services-title">Mes services</h2>
         <ul>
@@ -362,13 +386,13 @@
     </section>
 
     <section id="tarifs" class="hidden" aria-labelledby="tarifs-title">
-      <img src="/site/images/tarifs.png" alt="Tableau des tarifs proposés par 2D Services TPE" class="placeholder-img">
+      <img src="/site/images/tarifs.png" alt="Tableau des tarifs proposés par 2D Services TPE" class="content_image">
       <div class="section-content">
         <h2 id="tarifs-title">Mes tarifs</h2>
         <ul>
-          <li><strong>Pack découverte :</strong> 1 audit + 2h de prestation = 100 € TTC</li>
-          <li><strong>Forfait mensuel :</strong> à partir de 280 € TTC (8-10h d’accompagnement)</li>
-          <li><strong>Tarif horaire :</strong> dès 35 €/h TTC</li>
+          <li><strong>Pack découverte :</strong> 1 audit + 2h de prestation = 100 €</li>
+          <li><strong>Forfait mensuel :</strong> à partir de 280 € (8-10h d’accompagnement)</li>
+          <li><strong>Tarif horaire :</strong> dès 35 €/h</li>
         </ul>
         <p>Chaque mission est étudiée en fonction de vos besoins afin de vous proposer une solution sur mesure.</p>
       </div>
