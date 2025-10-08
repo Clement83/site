@@ -1,437 +1,812 @@
-<!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
+<!doctype html>
+<!-- Élément racine du document HTML avec spécification de la langue française -->
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2D Services TPE – Assistance administrative & comptable | Déborah Darmanin</title>
-  <meta name="description"
-    content="2D Services TPE accompagne TPE, PME et professions libérales dans la gestion administrative et comptable. Services flexibles, rigoureux et confidentiels à Hyères, TPM et à distance partout en France.">
-  <meta name="author" content="Déborah Darmanin">
-  <link rel="canonical" href="https://www.2dservices-tpe.fr/">
+    <!-- Définition de l'encodage des caractères en UTF-8 pour supporter les accents français -->
+    <meta charset="UTF-8" />
+    <!-- Configuration pour un affichage adaptatif sur tous les appareils (responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="2D Services TPE – Assistance administrative & comptable">
-  <meta property="og:description"
-    content="Solutions administratives et comptables sur mesure pour TPE, PME et professions libérales. Hyères, TPM & à distance.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.2dservices-tpe.fr/">
-  <meta property="og:image" content="/site/images/header.png">
+    <!-- Titre principal qui apparaît dans l'onglet du navigateur et dans les résultats de recherche -->
+    <title>
+        2D Services TPE – Assistance administrative & comptable | Déborah
+        Darmanin
+    </title>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="2D Services TPE – Assistance administrative & comptable">
-  <meta name="twitter:description"
-    content="Accompagnement rigoureux, flexible et confidentiel pour les dirigeants de TPE & PME.">
-  <meta name="twitter:image" content="/site/images/header.png">
+    <!-- Description de la page pour le référencement SEO (160 caractères max recommandés) -->
+    <meta name="description"
+        content="2D Services TPE accompagne TPE, PME et professions libérales dans la gestion administrative et comptable. Services flexibles, rigoureux et confidentiels à Hyères, TPM et à distance partout en France." />
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "2D Services TPE",
-    "image": "/site/images/deb.jpg",
-    "url": "https://www.2dservices-tpe.fr/",
-    "telephone": "+33612345678",
-    "email": "deborah@example.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Hyères",
-      "addressRegion": "Provence-Alpes-Côte d’Azur",
-      "addressCountry": "FR"
-    },
-    "description": "2D Services TPE propose des solutions administratives et comptables pour TPE, PME et professions libérales. Interventions sur site (Hyères & TPM) ou à distance en France.",
-    "founder": {
-      "@type": "Person",
-      "name": "Déborah Darmanin"
-    },
-    "areaServed": "France"
-  }
-  </script>
+    <!-- Indication de l'auteur de la page -->
+    <meta name="author" content="Déborah Darmanin" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap"
-    rel="stylesheet">
-  <style>
-    :root {
-      --vert-clair: #f0f7e8;
-      --vert-moyen: #8ebe94;
-      --vert-fonce: #6b8e6b;
-      --texte: #333;
-      --blanc: #fff;
-      --gris-clair: #f9f9f9;
-      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
+    <!-- URL canonique pour éviter le contenu dupliqué et améliorer le SEO -->
+    <link rel="canonical" href="https://www.2dservices-tpe.fr/" />
 
-    body {
-      margin: 0;
-      font-family: 'Lato', sans-serif;
-      background: var(--gris-clair);
-      color: var(--texte);
-      line-height: 1.8;
-    }
+    <!-- Balises Open Graph pour l'affichage sur Facebook et autres réseaux sociaux -->
+    <meta property="og:title" content="2D Services TPE – Assistance administrative & comptable" />
+    <meta property="og:description"
+        content="Solutions administratives et comptables sur mesure pour TPE, PME et professions libérales. Hyères, TPM & à distance." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.2dservices-tpe.fr/" />
+    <meta property="og:image" content="/images/header.png" />
 
-    html {
-      scroll-behavior: smooth;
-    }
+    <!-- Balises Twitter Card pour l'affichage optimisé sur Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="2D Services TPE – Assistance administrative & comptable" />
+    <meta name="twitter:description"
+        content="Accompagnement rigoureux, flexible et confidentiel pour les dirigeants de TPE & PME." />
+    <meta name="twitter:image" content="/images/header.png" />
 
-    header {
-      background: var(--vert-moyen);
-      color: var(--blanc);
-      padding: 4rem 1rem;
-      text-align: center;
-    }
+    <!-- Données structurées JSON-LD pour améliorer la compréhension par les moteurs de recherche -->
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "2D Services TPE",
+                "image": "/images/deb.jpg",
+                "url": "https://www.2dservices-tpe.fr/",
+                "telephone": "+33612345678",
+                "email": "deborah@example.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hyères",
+                    "addressRegion": "Provence-Alpes-Côte d’Azur",
+                    "addressCountry": "FR"
+                },
+                "description": "2D Services TPE propose des solutions administratives et comptables pour TPE, PME et professions libérales. Interventions sur site (Hyères & TPM) ou à distance en France.",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Déborah Darmanin"
+                },
+                "areaServed": "France"
+            }
+        </script>
 
-    header h1 {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+    <!-- Préchargement des polices Google Fonts pour améliorer les performances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
+    <!-- Importation des polices Montserrat et Lato depuis Google Fonts -->
+    <!-- Montserrat : police moderne pour les titres -->
+    <!-- Lato : police lisible pour le contenu -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet" />
 
-    header img {
-      height: 100%;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
+    <!-- Début des styles CSS intégrés -->
+    <style>
+        /* === VARIABLES CSS === */
+        /* Définition des couleurs principales du site sous forme de variables CSS */
+        /* Cela permet de changer facilement les couleurs dans tout le site */
+        :root {
+            --vert-clair: #f0f7e8;
+            /* Vert très clair pour les arrière-plans doux */
+            --vert-moyen: #8ebe94;
+            /* Vert principal pour l'en-tête et accents */
+            --vert-fonce: #6b8e6b;
+            /* Vert foncé pour le texte et navigation */
+            --texte: #333;
+            /* Couleur du texte principal (gris foncé) */
+            --blanc: #fff;
+            /* Blanc pur */
+            --gris-clair: #f9f9f9;
+            /* Gris très clair pour l'arrière-plan général */
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            /* Ombre douce pour les cartes */
+        }
 
-    .nav-container {
-      background: var(--blanc);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        /* === STYLES GÉNÉRAUX === */
+        /* Configuration de base du body (corps de la page) */
+        body {
+            margin: 0;
+            /* Supprime les marges par défaut du navigateur */
+            font-family: "Lato", sans-serif;
+            /* Police principale pour tout le texte */
+            background: var(--gris-clair);
+            /* Couleur d'arrière-plan générale */
+            color: var(--texte);
+            /* Couleur du texte par défaut */
+            line-height: 1.8;
+            /* Espacement entre les lignes pour améliorer la lisibilité */
+        }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-      max-width: 1100px;
-      margin: auto;
-    }
+        /* Activation du défilement fluide pour les ancres (liens vers sections) */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-    }
+        /* === STYLES DE L'EN-TÊTE === */
+        /* Configuration de la zone d'en-tête principale */
+        header {
+            background: var(--vert-moyen);
+            /* Arrière-plan vert */
+            color: var(--blanc);
+            /* Texte en blanc */
+            text-align: center;
+            /* Centrage du contenu */
+        }
 
-    nav a {
-      text-decoration: none;
-      color: var(--vert-fonce);
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background 0.3s, color 0.3s;
-    }
+        /* Style du titre principal (H1) dans l'en-tête */
+        header h1 {
+            margin: 0;
+            /* Supprime les marges par défaut */
+            font-family: "Montserrat", sans-serif;
+            /* Police décorative pour le titre */
+            font-size: 3rem;
+            /* Taille de police importante (48px environ) */
+            font-weight: 700;
+            /* Gras */
+            letter-spacing: 1px;
+            /* Espacement entre les lettres */
+        }
 
-    nav a:hover {
-      background: var(--vert-fonce);
-      color: var(--blanc);
-    }
+        /* Style du sous-titre dans l'en-tête */
+        header p {
+            margin-top: 0.5rem;
+            /* Petite marge au-dessus */
+            font-size: 1.2rem;
+            /* Taille légèrement plus grande que normale */
+            opacity: 0.9;
+            /* Légère transparence pour adoucir */
+        }
 
-    .nav-logo {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--vert-fonce);
-      text-decoration: none;
-    }
+        /* Style des images dans l'en-tête */
+        header img {
+            height: 100%;
+            /* Prend toute la hauteur disponible */
+            object-fit: contain;
+            /* Conserve les proportions de l'image */
+            display: block;
+            /* Affichage en bloc pour centrage */
+            margin: 0 auto;
+            /* Centrage horizontal automatique */
+        }
 
-    .hamburger {
-      display: none;
-      cursor: pointer;
-    }
+        /* === STYLES DE LA NAVIGATION === */
+        /* Conteneur principal de la barre de navigation */
+        .nav-container {
+            background: var(--blanc);
+            /* Arrière-plan blanc */
+            position: sticky;
+            /* Reste collée en haut lors du défilement */
+            top: 0;
+            /* Position collée tout en haut */
+            z-index: 10;
+            /* Au-dessus des autres éléments */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Ombre subtile sous la navigation */
+        }
 
-    .hamburger .line {
-      width: 25px;
-      height: 3px;
-      background-color: var(--vert-fonce);
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
+        /* Configuration du menu de navigation */
+        nav {
+            display: flex;
+            /* Utilise Flexbox pour l'organisation */
+            justify-content: space-between;
+            /* Espace les éléments aux extrémités */
+            align-items: center;
+            /* Centre verticalement les éléments */
+            padding: 1rem;
+            /* Espacement intérieur */
+            max-width: 1100px;
+            /* Largeur maximale du contenu */
+            margin: auto;
+            /* Centrage horizontal */
+        }
 
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: var(--blanc);
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
+        /* Container des liens de navigation */
+        .nav-links {
+            display: flex;
+            /* Affichage horizontal des liens */
+            gap: 2rem;
+            /* Espacement entre chaque lien */
+        }
 
-      .nav-links.open {
-        display: flex;
-      }
+        /* Style des liens dans la navigation */
+        nav a {
+            text-decoration: none;
+            /* Supprime le soulignement */
+            color: var(--vert-fonce);
+            /* Couleur verte foncée */
+            font-weight: 700;
+            /* Texte en gras */
+            font-family: "Montserrat", sans-serif;
+            /* Police décorative */
+            padding: 0.5rem 1rem;
+            /* Espacement intérieur du lien */
+            border-radius: 5px;
+            /* Coins arrondis */
+            transition:
+                /* Animation fluide pour les changements */
+                background 0.3s,
+                /* Animation de l'arrière-plan */
+                color 0.3s;
+            /* Animation de la couleur */
+        }
 
-      .hamburger {
-        display: block;
-      }
+        /* Effet au survol des liens de navigation */
+        nav a:hover {
+            background: var(--vert-fonce);
+            /* Arrière-plan vert au survol */
+            color: var(--blanc);
+            /* Texte blanc au survol */
+        }
 
-      .hamburger.open .line:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-      }
+        /* Style du logo dans la navigation */
+        .nav-logo {
+            font-family: "Montserrat", sans-serif;
+            /* Police décorative */
+            font-weight: 700;
+            /* Gras */
+            font-size: 1.5rem;
+            /* Taille importante */
+            color: var(--vert-fonce);
+            /* Couleur verte */
+            text-decoration: none;
+            /* Pas de soulignement */
+        }
 
-      .hamburger.open .line:nth-child(2) {
-        opacity: 0;
-      }
+        /* === MENU HAMBURGER (mobile) === */
+        /* Bouton hamburger pour les petits écrans */
+        .hamburger {
+            display: none;
+            /* Caché par défaut sur desktop */
+            cursor: pointer;
+            /* Curseur de clic */
+        }
 
-      .hamburger.open .line:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-      }
+        /* Chaque ligne du menu hamburger */
+        .hamburger .line {
+            width: 25px;
+            /* Largeur des barres */
+            height: 3px;
+            /* Hauteur des barres */
+            background-color: var(--vert-fonce);
+            /* Couleur verte */
+            margin: 5px 0;
+            /* Espacement vertical entre les barres */
+            transition: all 0.3s ease;
+            /* Animation fluide pour la transformation */
+        }
 
-      header {
-        padding: 2rem 1rem;
-      }
+        /* === STYLES RESPONSIVE POUR MOBILES === */
+        /* Ces styles s'appliquent uniquement sur les écrans de 768px et moins */
+        @media (max-width: 768px) {
 
-      header img {
-        width: 100%;
-        height: auto;
-        /* Adjust as needed */
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
-      }
-    }
+            /* Configuration du menu mobile */
+            .nav-links {
+                display: none;
+                /* Menu caché par défaut sur mobile */
+                position: absolute;
+                /* Positionnement absolu pour superposition */
+                top: 100%;
+                /* Juste en dessous de la navigation */
+                left: 0;
+                /* Aligné à gauche */
+                background: var(--blanc);
+                /* Arrière-plan blanc */
+                width: 100%;
+                /* Prend toute la largeur */
+                flex-direction: column;
+                /* Liens empilés verticalement */
+                align-items: center;
+                /* Centrage des liens */
+                padding: 2rem 0;
+                /* Espacement vertical */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                /* Ombre sous le menu */
+            }
 
-    main {
-      padding: 2rem 1rem;
-      max-width: 1100px;
-      margin: auto;
-    }
+            /* Menu mobile ouvert (classe ajoutée via JavaScript) */
+            .nav-links.open {
+                display: flex;
+                /* Affiche le menu quand ouvert */
+            }
 
-    section {
-      background: var(--blanc);
-      margin-bottom: 3rem;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      align-items: center;
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
+            /* Affichage du bouton hamburger sur mobile */
+            .hamburger {
+                display: block;
+                /* Visible sur mobile */
+            }
 
-    section.hidden {
-      opacity: 0;
-      transform: translateY(20px);
-    }
+            /* === ANIMATION DU MENU HAMBURGER === */
+            /* Transformation de la première ligne en croix */
+            .hamburger.open .line:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+                /* Rotation et déplacement */
+            }
 
-    @media (min-width: 768px) {
-      section {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
+            /* Disparition de la ligne du milieu */
+            .hamburger.open .line:nth-child(2) {
+                opacity: 0;
+                /* Devient invisible */
+            }
 
-      section:nth-child(odd) .section-content {
-        order: 1;
-      }
-    }
+            /* Transformation de la troisième ligne en croix */
+            .hamburger.open .line:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+                /* Rotation et déplacement */
+            }
 
-    h2 {
-      margin-top: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: var(--vert-fonce);
-      position: relative;
-      padding-bottom: 0.5rem;
-    }
+            /* Ajustement de l'en-tête sur mobile */
+            header {
+                padding: 2rem 1rem;
+                /* Plus de padding vertical */
+            }
 
-    h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50px;
-      height: 4px;
-      background: var(--vert-moyen);
-    }
+            /* Configuration des images d'en-tête sur mobile */
+            header img {
+                width: 100%;
+                /* Prend toute la largeur */
+                height: auto;
+                /* Hauteur automatique pour conserver les proportions */
+                object-fit: contain;
+                /* Conserve les proportions */
+                display: block;
+                /* Affichage en bloc */
+                margin: 0 auto;
+                /* Centrage horizontal */
+            }
+        }
 
-    ul {
-      padding-left: 1.5rem;
-      list-style: none;
-    }
+        /* === STYLES DU CONTENU PRINCIPAL === */
+        /* Configuration de la zone de contenu principale */
+        main {
+            padding: 2rem 1rem;
+            /* Espacement intérieur */
+            max-width: 1100px;
+            /* Largeur maximale pour la lisibilité */
+            margin: auto;
+            /* Centrage horizontal */
+        }
 
-    ul li {
-      padding-left: 1.5rem;
-      position: relative;
-      margin-bottom: 0.5rem;
-    }
+        /* === STYLES DES SECTIONS === */
+        /* Configuration de base pour toutes les sections */
+        section {
+            background: var(--blanc);
+            /* Arrière-plan blanc */
+            margin-bottom: 3rem;
+            /* Espacement entre les sections */
+            padding: 2rem;
+            /* Espacement intérieur */
+            border-radius: 8px;
+            /* Coins arrondis */
+            box-shadow: var(--shadow);
+            /* Ombre douce */
+            display: grid;
+            /* Utilise CSS Grid */
+            grid-template-columns: 1fr;
+            /* Une seule colonne par défaut */
+            gap: 2rem;
+            /* Espacement entre les éléments */
+            align-items: center;
+            /* Centrage vertical */
+            transition:
+                /* Animations pour l'apparition */
+                opacity 0.6s ease-out,
+                /* Animation de l'opacité */
+                transform 0.6s ease-out;
+            /* Animation du déplacement */
+        }
 
-    ul li::before {
-      content: '✓';
-      color: var(--vert-fonce);
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-    }
+        /* Sections cachées (utilisées pour l'animation d'apparition) */
+        section.hidden {
+            opacity: 0;
+            /* Invisible */
+            transform: translateY(20px);
+            /* Décalée vers le bas */
+        }
 
-    .content_image {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-      max-height: 350px;
-    }
+        /* === STYLES RESPONSIVE POUR DESKTOP === */
+        /* Ces styles s'appliquent sur les écrans de 768px et plus */
+        @media (min-width: 768px) {
 
-    footer {
-      background: var(--texte);
-      color: var(--blanc);
-      padding: 3rem 1rem;
-      text-align: center;
-    }
+            /* Configuration en grille pour les grandes sections */
+            section {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                /* Colonnes automatiques */
+            }
 
-    .contact-links a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.8rem 1.5rem;
-      background: var(--vert-moyen);
-      color: var(--blanc);
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      font-family: 'Montserrat', sans-serif;
-      transition: background 0.3s, transform 0.3s;
-      border: 2px solid var(--vert-moyen);
-    }
+            /* Alternance de l'ordre du contenu pour créer un effet visuel zigzag */
+            /* Par défaut, l'image est en premier (order: 0) et le contenu en second (order: 1) */
+            section .section-content {
+                order: 1;
+                /* Contenu en second par défaut */
+            }
 
-    .contact-links a:hover {
-      background: var(--vert-fonce);
-      transform: translateY(-3px);
-    }
+            section img {
+                order: 0;
+                /* Image en premier par défaut */
+            }
 
-    .contact-links a.email {
-      background: transparent;
-      border-color: var(--vert-moyen);
-    }
+            /* Pour les sections paires, on inverse l'ordre : contenu puis image */
+            section:nth-child(even) .section-content {
+                order: 0;
+                /* Place le contenu en premier pour les sections paires */
+            }
 
-    .contact-links a.email:hover {
-      background: var(--vert-moyen);
-      color: var(--blanc);
-    }
+            section:nth-child(even) img {
+                order: 1;
+                /* Place l'image en second pour les sections paires */
+            }
+        }
 
-    footer h2 {
-      display: inline-block;
-    }
-  </style>
+        /* === STYLES DES TITRES === */
+        /* Configuration des titres de niveau 2 (H2) */
+        h2 {
+            margin-top: 0;
+            /* Supprime la marge supérieure */
+            font-family: "Montserrat", sans-serif;
+            /* Police décorative */
+            font-size: 2rem;
+            /* Taille importante */
+            color: var(--vert-fonce);
+            /* Couleur verte foncée */
+            position: relative;
+            /* Pour permettre l'ajout d'éléments décoratifs */
+            padding-bottom: 0.5rem;
+            /* Espacement en bas */
+        }
+
+        /* Ligne décorative sous les titres H2 */
+        h2::after {
+            content: "";
+            /* Contenu vide pour créer un élément décoratif */
+            position: absolute;
+            /* Positionnement absolu par rapport au H2 */
+            bottom: 0;
+            /* Placé en bas du titre */
+            left: 0;
+            /* Aligné à gauche */
+            width: 50px;
+            /* Largeur de la ligne */
+            height: 4px;
+            /* Épaisseur de la ligne */
+            background: var(--vert-moyen);
+            /* Couleur verte */
+        }
+
+        /* === STYLES DES LISTES === */
+        /* Configuration des listes non-ordonnées */
+        ul {
+            padding-left: 1.5rem;
+            /* Indentation des listes */
+            list-style: none;
+            /* Supprime les puces par défaut */
+        }
+
+        /* Style des éléments de liste */
+        ul li {
+            padding-left: 1.5rem;
+            /* Espacement pour laisser place à la puce personnalisée */
+            position: relative;
+            /* Pour positionner la puce personnalisée */
+            margin-bottom: 0.5rem;
+            /* Espacement entre les éléments */
+        }
+
+        /* Puce personnalisée (coche verte) pour les listes */
+        ul li::before {
+            content: "✓";
+            /* Caractère de coche */
+            color: var(--vert-fonce);
+            /* Couleur verte */
+            font-weight: bold;
+            /* Gras pour plus de visibilité */
+            position: absolute;
+            /* Positionnement absolu */
+            left: 0;
+            /* Placé à gauche de l'élément */
+        }
+
+        /* === STYLES DES IMAGES === */
+        /* Configuration des images de contenu */
+        .content_image {
+            width: 100%;
+            /* Prend toute la largeur disponible */
+            height: auto;
+            /* Hauteur automatique pour conserver les proportions */
+            border-radius: 8px;
+            /* Coins arrondis */
+            object-fit: cover;
+            /* Couvre l'espace en conservant les proportions */
+            max-height: 350px;
+            /* Hauteur maximale pour éviter des images trop grandes */
+        }
+
+        /* === STYLES DU PIED DE PAGE === */
+        /* Configuration du footer */
+        footer {
+            background: var(--texte);
+            /* Arrière-plan sombre */
+            color: var(--blanc);
+            /* Texte blanc */
+            padding: 3rem 1rem;
+            /* Espacement généreux */
+            text-align: center;
+            /* Centrage du contenu */
+        }
+
+        /* Styles des liens de contact dans le footer */
+        .contact-links a {
+            display: inline-block;
+            /* Affichage en bloc inline pour la mise en forme */
+            margin: 0.5rem;
+            /* Espacement autour de chaque lien */
+            padding: 0.8rem 1.5rem;
+            /* Espacement intérieur du bouton */
+            background: var(--vert-moyen);
+            /* Arrière-plan vert */
+            color: var(--blanc);
+            /* Texte blanc */
+            text-decoration: none;
+            /* Pas de soulignement */
+            border-radius: 50px;
+            /* Forme de pilule */
+            font-weight: bold;
+            /* Texte en gras */
+            font-family: "Montserrat", sans-serif;
+            /* Police décorative */
+            transition:
+                /* Animations pour les interactions */
+                background 0.3s,
+                /* Animation de l'arrière-plan */
+                transform 0.3s;
+            /* Animation de déplacement */
+            border: 2px solid var(--vert-moyen);
+            /* Bordure verte */
+        }
+
+        /* Effet au survol des liens de contact */
+        .contact-links a:hover {
+            background: var(--vert-fonce);
+            /* Couleur plus foncée au survol */
+            transform: translateY(-3px);
+            /* Léger déplacement vers le haut */
+        }
+
+        /* Style spécial pour le lien email */
+        .contact-links a.email {
+            background: transparent;
+            /* Arrière-plan transparent */
+            border-color: var(--vert-moyen);
+            /* Bordure verte */
+        }
+
+        /* Effet au survol du lien email */
+        .contact-links a.email:hover {
+            background: var(--vert-moyen);
+            /* Arrière-plan vert au survol */
+            color: var(--blanc);
+            /* Texte blanc au survol */
+        }
+
+        /* Style des titres dans le footer */
+        footer h2 {
+            display: inline-block;
+            /* Affichage inline-block pour la ligne décorative */
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <img src="/site/images/header.png" alt="Logo de 2D Services TPE">
-  </header>
+    <!-- === EN-TÊTE DE LA PAGE === -->
+    <!-- Zone d'en-tête contenant le logo principal -->
+    <header>
+        <!-- Logo principal de l'entreprise avec texte alternatif pour l'accessibilité -->
+        <img src="/images/header.png" alt="Logo de 2D Services TPE" />
+    </header>
 
-  <div class="nav-container">
-    <nav aria-label="Navigation principale">
-      <a href="#" class="nav-logo">2D Services TPE</a>
-      <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#services">Services</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="hamburger" aria-label="Menu mobile">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </div>
+    <!-- === BARRE DE NAVIGATION === -->
+    <!-- Conteneur de la navigation collante -->
+    <div class="nav-container">
+        <!-- Navigation principale avec rôle d'accessibilité -->
+        <nav aria-label="Navigation principale">
+            <!-- Logo/nom de l'entreprise qui fait office de lien d'accueil -->
+            <a href="#" class="nav-logo">2D Services TPE</a>
 
-  <main>
-    <section id="about" class="hidden" aria-labelledby="about-title"><img src="/site/images/deb.jpg"
-        alt="Portrait de Déborah Darmanin, fondatrice de 2D Services TPE" class="content_image">
-      <div class="section-content">
-        <h2 id="about-title">À propos de moi</h2>
-        <p>Je m’appelle <strong>Déborah Darmanin</strong> et j’ai créé <strong>2D Services TPE</strong> pour accompagner
-          les dirigeants dans leur quotidien administratif et comptable. Avec plus de 20 ans d’expérience en entreprise
-          et en cabinet comptable, je propose des solutions simples, flexibles et efficaces pour vous libérer du temps
-          et vous permettre de vous concentrer sur votre activité.</p>
-        <p><strong>Mes valeurs :</strong> rigueur – confidentialité – adaptabilité.</p>
-      </div>
-    </section>
+            <!-- Liste des liens de navigation (cachée sur mobile) -->
+            <div class="nav-links">
+                <a href="#about">À propos</a> <!-- Lien vers la section "À propos" -->
+                <a href="#services">Services</a> <!-- Lien vers la section "Services" -->
+                <a href="#tarifs">Tarifs</a> <!-- Lien vers la section "Tarifs" -->
+                <a href="#contact">Contact</a> <!-- Lien vers la section "Contact" -->
+            </div>
 
-    <section id="services" class="hidden" aria-labelledby="services-title">
-      <img src="/site/images/service.jpg" alt="Illustration des services administratifs et comptables proposés"
-        class="content_image">
-      <div class="section-content">
-        <h2 id="services-title">Mes services</h2>
-        <ul>
-          <li><strong>Préparation comptable :</strong> tri et préparation des pièces, gestion de la TVA et des
-            déclarations, suivi de trésorerie, transmission des éléments à l’expert-comptable.</li>
-          <li><strong>Assistance administrative :</strong> facturation, relances, rédaction de courriers, gestion
-            d’agenda et e-mails.</li>
-          <li><strong>Accompagnement flexible :</strong> interventions ponctuelles, forfaits mensuels adaptés, sur site
-            (Hyères & TPM) ou à distance partout en France.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="tarifs" class="hidden" aria-labelledby="tarifs-title">
-      <img src="/site/images/tarifs.png" alt="Tableau des tarifs proposés par 2D Services TPE" class="content_image">
-      <div class="section-content">
-        <h2 id="tarifs-title">Mes tarifs</h2>
-        <ul>
-          <li><strong>Pack découverte :</strong> 1 audit + 2h de prestation = 100 €</li>
-          <li><strong>Forfait mensuel :</strong> à partir de 284 € (8h d’accompagnement)</li>
-          <li><strong>Tarif horaire :</strong> dès 35 €/h</li>
-        </ul>
-        <p>Chaque mission est étudiée en fonction de vos besoins afin de vous proposer une solution sur mesure.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <h2>Contactez-moi</h2>
-    <p>Vous souhaitez gagner du temps et vous recentrer sur votre cœur de métier ? Contactez-moi dès aujourd’hui pour un
-      devis gratuit ou plus d’informations.</p>
-    <div class="contact-links">
-      <a href="tel:+33609663766">📞 Appeler</a>
-      <a
-        href="mailto:contact@2dservices-tpe.fr?subject=Demande%20de%20devis%20-%202D%20Services%20TPE&body=Bonjour%20D%C3%A9borah,%0D%0A%0D%0AJe%20souhaite%20avoir%20plus%20d'informations%20concernant%20vos%20services.%0D%0APouvez-vous%20me%20recontacter%20pour%20discuter%20de%20mes%20besoins%20administratifs%20et%20comptables%20?%0D%0A%0D%0AMerci%20par%20avance.%0D%0A%0D%0A[Cordialement,%0D%0AVotre%20nom]">✉️
-        Envoyer un email</a>
+            <!-- Menu hamburger pour les appareils mobiles -->
+            <div class="hamburger" aria-label="Menu mobile">
+                <div class="line"></div> <!-- Première ligne du hamburger -->
+                <div class="line"></div> <!-- Deuxième ligne du hamburger -->
+                <div class="line"></div> <!-- Troisième ligne du hamburger -->
+            </div>
+        </nav>
     </div>
-    <p style="margin-top: 3rem; opacity: 0.7;">© 2025 2D Services TPE – Tous droits réservés</p>
-  </footer>
 
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
+    <!-- === CONTENU PRINCIPAL === -->
+    <main>
+        <!-- === SECTION À PROPOS === -->
+        <!-- Section de présentation avec animation d'apparition -->
+        <section id="about" class="hidden" aria-labelledby="about-title">
+            <!-- Photo de présentation de Déborah avec description alternative -->
+            <img src="/images/deb.jpg" alt="Portrait de Déborah Darmanin, fondatrice de 2D Services TPE"
+                class="content_image" />
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('hidden');
-        } else {
-          entry.target.classList.add('hidden');
-        }
-      });
-    });
+            <!-- Contenu textuel de la section -->
+            <div class="section-content">
+                <!-- Titre de la section avec identifiant pour l'accessibilité -->
+                <h2 id="about-title">À propos de moi</h2>
+                <p>
+                    Je m'appelle <strong>Déborah Darmanin</strong> et j'ai
+                    créé <strong>2D Services TPE</strong> pour accompagner
+                    les dirigeants dans leur quotidien administratif et
+                    comptable. Avec plus de 20 ans d'expérience en
+                    entreprise et en cabinet comptable, je propose des
+                    solutions simples, flexibles et efficaces pour vous
+                    libérer du temps et vous permettre de vous concentrer
+                    sur votre activité.
+                </p>
+                <p>
+                    <strong>Mes valeurs :</strong> rigueur – confidentialité
+                    – adaptabilité.
+                </p>
+            </div>
+        </section>
 
-    document.querySelectorAll('section.hidden').forEach((el) => observer.observe(el));
-  </script>
+        <!-- === SECTION SERVICES === -->
+        <!-- Section détaillant les services proposés -->
+        <section id="services" class="hidden" aria-labelledby="services-title">
+            <!-- Image illustrative des services avec description alternative -->
+            <img src="/images/service.jpg" alt="Illustration des services administratifs et comptables proposés"
+                class="content_image" />
+
+            <!-- Contenu de la section services -->
+            <div class="section-content">
+                <!-- Titre de la section -->
+                <h2 id="services-title">Mes services</h2>
+
+                <!-- Liste des services avec puces personnalisées (coches vertes) -->
+                <ul>
+                    <li>
+                        <strong>Préparation comptable :</strong> tri et
+                        préparation des pièces, gestion de la TVA et des
+                        déclarations, suivi de trésorerie, transmission des
+                        éléments à l'expert-comptable.
+                    </li>
+                    <li>
+                        <strong>Assistance administrative :</strong>
+                        facturation, relances, rédaction de courriers,
+                        gestion d'agenda et e-mails.
+                    </li>
+                    <li>
+                        <strong>Accompagnement flexible :</strong>
+                        interventions ponctuelles, forfaits mensuels
+                        adaptés, sur site (Hyères & TPM) ou à distance
+                        partout en France.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- === SECTION TARIFS === -->
+        <!-- Section présentant les différents tarifs proposés -->
+        <section id="tarifs" class="hidden" aria-labelledby="tarifs-title">
+            <!-- Image illustrative des tarifs avec description alternative -->
+            <img src="/images/tarifs.png" alt="Tableau des tarifs proposés par 2D Services TPE" class="content_image" />
+
+            <!-- Contenu de la section tarifs -->
+            <div class="section-content">
+                <!-- Titre de la section -->
+                <h2 id="tarifs-title">Mes tarifs</h2>
+
+                <!-- Liste des différentes offres tarifaires -->
+                <ul>
+                    <li>
+                        <strong>Pack découverte :</strong> 1 audit + 2h de
+                        prestation = 100 €
+                    </li>
+                    <li>
+                        <strong>Forfait mensuel :</strong> à partir de 284 €
+                        (8h d'accompagnement)
+                    </li>
+                    <li><strong>Tarif horaire :</strong> dès 35 €/h</li>
+                </ul>
+                <p>
+                    Chaque mission est étudiée en fonction de vos besoins
+                    afin de vous proposer une solution sur mesure.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- === PIED DE PAGE / SECTION CONTACT === -->
+    <!-- Footer contenant les informations de contact -->
+    <footer id="contact">
+        <!-- Titre de la section contact -->
+        <h2>Contactez-moi</h2>
+
+        <!-- Message d'invitation au contact -->
+        <p>
+            Vous souhaitez gagner du temps et vous recentrer sur votre cœur
+            de métier ? Contactez-moi dès aujourd'hui pour un devis gratuit
+            ou plus d'informations.
+        </p>
+
+        <!-- Conteneur des liens de contact -->
+        <div class="contact-links">
+            <!-- Lien téléphone avec protocole tel: pour ouvrir l'app téléphone -->
+            <a href="tel:+33609663766">📞 Appeler</a>
+
+            <!-- Lien email avec protocole mailto: et contenu pré-rempli -->
+            <!-- Les %XX sont des caractères encodés pour les espaces et retours à la ligne -->
+            <a
+                href="mailto:contact@2dservices-tpe.fr?subject=Demande%20de%20devis%20-%202D%20Services%20TPE&body=Bonjour%20D%C3%A9borah,%0D%0A%0D%0AJe%20souhaite%20avoir%20plus%20d'informations%20concernant%20vos%20services.%0D%0APouvez-vous%20me%20recontacter%20pour%20discuter%20de%20mes%20besoins%20administratifs%20et%20comptables%20?%0D%0A%0D%0AMerci%20par%20avance.%0D%0A%0D%0A[Cordialement,%0D%0AVotre%20nom]">✉️
+                Envoyer un email</a>
+        </div>
+
+        <!-- Mention de copyright -->
+        <p style="margin-top: 3rem; opacity: 0.7">
+            © 2025 2D Services TPE – Tous droits réservés
+        </p>
+    </footer>
+
+    <!-- === SCRIPTS JAVASCRIPT === -->
+    <script>
+        // === GESTION DU MENU MOBILE ===
+
+        // Sélection des éléments du DOM nécessaires pour le menu mobile
+        const hamburger = document.querySelector(".hamburger");  // Bouton hamburger
+        const navLinks = document.querySelector(".nav-links");   // Menu de navigation
+
+        // === FONCTIONNALITÉ D'OUVERTURE/FERMETURE DU MENU ===
+        // Écoute les clics sur le bouton hamburger
+        hamburger.addEventListener("click", () => {
+            // Toggle (ajoute/retire) la classe "open" sur le hamburger pour l'animation
+            hamburger.classList.toggle("open");
+            // Toggle (ajoute/retire) la classe "open" sur le menu pour l'affichage
+            navLinks.classList.toggle("open");
+        });
+
+        // === FERMETURE AUTOMATIQUE DU MENU AU CLIC SUR UN LIEN ===
+        // Sélection de tous les liens dans le menu de navigation
+        const navLinkItems = document.querySelectorAll(".nav-links a");
+
+        // Pour chaque lien de navigation
+        navLinkItems.forEach(link => {
+            // Ajoute un écouteur d'événements pour le clic
+            link.addEventListener("click", () => {
+                // Retire la classe "open" du hamburger (remet l'icône normale)
+                hamburger.classList.remove("open");
+                // Retire la classe "open" du menu (ferme le menu)
+                navLinks.classList.remove("open");
+            });
+        });
+
+        // === ANIMATIONS D'APPARITION DES SECTIONS ===
+
+        // Création d'un observateur d'intersection pour détecter quand les sections entrent dans la vue
+        const observer = new IntersectionObserver((entries) => {
+            // Pour chaque élément observé qui change de statut de visibilité
+            entries.forEach((entry) => {
+                // Si l'élément entre dans la zone visible de l'écran
+                if (entry.isIntersecting) {
+                    // Retire la classe "hidden" pour déclencher l'animation d'apparition
+                    entry.target.classList.remove("hidden");
+                } else {
+                    // Ajoute la classe "hidden" pour cacher l'élément (optionnel)
+                    // Cette ligne fait que les éléments se cachent quand ils sortent de la vue
+                    entry.target.classList.add("hidden");
+                }
+            });
+        });
+
+        // Application de l'observateur à toutes les sections ayant la classe "hidden"
+        // Cela permet l'animation d'apparition progressive au scroll
+        document
+            .querySelectorAll("section.hidden")  // Sélectionne toutes les sections avec classe "hidden"
+            .forEach((el) => observer.observe(el)); // Applique l'observateur à chaque section
+    </script>
 </body>
 
 </html>

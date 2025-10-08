@@ -1,0 +1,131 @@
+# === FICHIERS ET DOSSIERS SYSTÈME ===
+
+# Fichiers système macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers système Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Fichiers système Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# === ÉDITEURS ET IDE ===
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# WebStorm/PhpStorm
+.idea/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# === NODE.JS ET NPM (si utilisés) ===
+
+# Dépendances
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers de verrouillage (garder package-lock.json mais ignorer yarn.lock si pas utilisé)
+# yarn.lock
+
+# === OUTILS DE BUILD ET DÉVELOPPEMENT ===
+
+# Fichiers de build
+build/
+dist/
+out/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Sass
+.sass-cache/
+*.css.map
+
+# === FICHIERS TEMPORAIRES ===
+
+# Logs
+*.log
+logs/
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# === ENVIRONNEMENT ET CONFIGURATION ===
+
+# Variables d'environnement
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Fichiers de configuration locaux
+config.local.js
+config.local.json
+
+# === DÉPLOIEMENT ===
+
+# Dossiers de déploiement FTP
+.ftpconfig
+.sftp-config.json
+
+# === SPÉCIFIQUE AU PROJET WEB ===
+
+# Images originales non optimisées (si vous avez un dossier de sources)
+src/images/original/
+assets/raw/
+
+# Fichiers de documentation générés
+docs/generated/
+
+# Tests
+coverage/
+.nyc_output/
+
+# === AUTRES ===
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Fichiers de verrouillage
+*.lock
+!package-lock.json
